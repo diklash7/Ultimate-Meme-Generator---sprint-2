@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Meme Generator</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body onload="init()">
+    <h1>Image-Gallery</h1>
+
+
+    <div class="gallery"></div>
+
+
+    <div>
+        <h1> Meme-Editor </h1>
+        <div class="canvas-container">
+            <canvas id="my-canvas" width="500" height="500" style="outline:2px solid blue"></canvas>
+            <!-- <img src="img/1.jpg" alt="" style="display:none;"> -->
+
+        </div>
+    </div>
+
+    <section class="control-box">
+        <input type="text" placeholder="text line" oninput="setLineTxt(this.value)">
+
+
+
+    </section>
+    <div class="select-container">
+        <button>increase font</button>
+        <button>dicrese font</button>
+        <button>align to left</button>
+        <button>align to center</button>
+        <button>align to right</button>
+        <button onclick="clearCanvas()">delte canvas</button>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/utill.js"></script>
+    <script src="js/meme-service.js"></script>
+    <script src="js/meme-controller.js"></script>
+    <script src="js/gallery-controller.js"></script>
+</body>
+
+</html>
