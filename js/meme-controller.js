@@ -14,16 +14,16 @@ function init() {
 function renderMeme() {
     var meme = getMeme()
     console.log(meme);
-    const strHTML =
-        `
-<img class="img-gallery" src="${img.url}">
-`
+    // const strHTML =
+//         `
+// <img class="img-gallery" src="${img.id}}">
+// `
+// `<img class="imgtry" src="img/${3}.jpg" alt="" style="display:none;">`
 
-
-
-    document.querySelector('.canvas-img').innerHTML = strHTML
-    drawImg2()
+    var img= document.querySelector(`img.${id}`).innerHTML = strHTML
+    gCtx.drawImage(img, 0, 0, gCanvas.width, gCanvas.height);
 }
+
 //git status
 //git add .
 //git commit -m "sdfghj"
@@ -37,15 +37,16 @@ function drawImg2(img) {
     img.onload = () => {
         gCtx.drawImage(img, 0, 0, gCanvas.width, gCanvas.height);
     };
-    img.src = 'img/2.jpg';
-    gCtx.font="40pt Calibri";
-    gCtx.fillText('mmam',20,20);
+    
+    img.src = `img/${5}.jpg`;
+    // gCtx.font="40pt Calibri";
+    // gCtx.fillText('mmam',20,20);
     // console.log(img.src)
 
 }
 
 function drawImg() {
-    var elImg = document.querySelector('img');
+    var elImg = document.querySelector('.imgtry');
     gCtx.drawImage(elImg, 0, 0, gCanvas.width, gCanvas.height);
 }
 
