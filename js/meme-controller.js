@@ -98,63 +98,68 @@ function btnGallery(id) {
     document.querySelector('.Meme-Editor').classList.remove('hide');
 }
 
+function btnBackToGallery() {
+    document.querySelector('.Image-Gallery').classList.remove('hide');
+    document.querySelector('.Meme-Editor').classList.add('hide');
+}
+
 function onAddTxt(txt) {
     gMeme.lines[gMeme.selectedLineIdx].txt = txt;
     renderCanvas()
 }
 
-function addTextLine(){
+function addTextLine() {
     gMeme.selectedLineIdx++;
     renderCanvas()
 
 }
 
-function largerText(){
+function largerText() {
     gMeme.lines[gMeme.selectedLineIdx].size++;
     renderCanvas()
 
 }
 
-function smallerText(){
+function smallerText() {
     gMeme.lines[gMeme.selectedLineIdx].size--;
     renderCanvas()
 
 }
 
-function alignToLeft(){
-    gMeme.lines[gMeme.selectedLineIdx].location.x=0;
+function alignToLeft() {
+    gMeme.lines[gMeme.selectedLineIdx].location.x = 0;
     renderCanvas()
 }
 
-function alignToRight(){
-    gMeme.lines[gMeme.selectedLineIdx].location.x=250;
+function alignToRight() {
+    gMeme.lines[gMeme.selectedLineIdx].location.x = 250;
     renderCanvas()
 }
 
 
-function alignToCenter(){
-    gMeme.lines[gMeme.selectedLineIdx].location.x=120;
+function alignToCenter() {
+    gMeme.lines[gMeme.selectedLineIdx].location.x = 120;
     renderCanvas()
 }
 
-function switchLines(){
-    gMeme.lines[gMeme.selectedLineIdx].location.y=480;
-    gMeme.lines[gMeme.selectedLineIdx+2].location.y=20;
+function switchLines() {
+    gMeme.lines[gMeme.selectedLineIdx].location.y = 480;
+    gMeme.lines[gMeme.selectedLineIdx + 2].location.y = 20;
     renderCanvas()
 }
 
 function clearCanvas() {
-    // gMeme.selectedLineIdx--;
-    gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height)
-    // renderCanvas()
+    gMeme.selectedLineIdx--;
+    // gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height)
+    renderCanvas();
 }
 
 function setStrokeColor(color) {
-    gMeme.lines[gMeme.selectedLineIdx].strokeColor=color;
+    gMeme.lines[gMeme.selectedLineIdx].strokeColor = color;
     renderCanvas()
 }
 
 function setFillColor(color) {
-    gMeme.lines[gMeme.selectedLineIdx].fillColor=color;
+    gMeme.lines[gMeme.selectedLineIdx].fillColor = color;
     renderCanvas()
 }

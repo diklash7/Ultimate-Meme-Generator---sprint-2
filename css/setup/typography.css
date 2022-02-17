@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(MemeGenerator/fonts/Montserrat-Bold.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(MemeGenerator/fonts/Montserrat-Medium);
+}
+
+@font-face {
+    font-family:Montserrat-Regular ;
+    src: url(MemeGenerator/fonts/Montserrat-Regular);
+}
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(MemeGenerator/fonts/Montserrat-Thin);
+}

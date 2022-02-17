@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--clr3);
+    font-family:Montserrat-Regular ;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--clr3);
+}
+
+img{
+    height: 139;
+    width: 176.5px;
+    margin: 10.5px;
+}
+
+.hide{
+    display:none;
+}
+
+.btn{
+    cursor: pointer;
+    height:1.875em;
+    width: 1.875em;;
+    margin: 0.59em;
+    border-radius: 0.375em;
+    background-color: var(--clr3);
+    display: inline;
+}

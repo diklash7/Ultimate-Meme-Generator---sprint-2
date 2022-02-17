@@ -1,23 +1,19 @@
+/* SETUP  */
+@import 'setup/vars.css';
+@import 'setup/typography.css';
 
 
-img{
-    height: 139;
-    width: 176.5px;
-    margin: 10.5px;
-}
+/* BASE */
+@import 'basic/base.css';
+@import 'basic/layout.css';
+@import 'basic/helpers.css';
 
-.btn{
-    height:30px;
-    width: 30px;
-    margin: 9.5px;
-}
+/* COMPONENTS */
+@import 'components/main-header.css';
+@import 'components/canvas.css';
 
-.hide{
-    display:none;
-}
 
-nav{
-    height: 33px;
-    /* width:600px; */
-    background-color: #ff7f00;
-}
+
+
+
+
