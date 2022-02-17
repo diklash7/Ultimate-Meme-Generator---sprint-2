@@ -1,6 +1,5 @@
 var gCanvas;
 var gCtx;
-// var gColor;
 
 //git status
 //git add .
@@ -39,8 +38,6 @@ function drawText(line) {
 // }
 
 
-
-
 function downloadCanvas(elLink) {
     const data = gCanvas.toDataURL();
     elLink.href = data;
@@ -49,13 +46,9 @@ function downloadCanvas(elLink) {
 
 function uploadImg() {
     const imgDataUrl = gCanvas.toDataURL("image/jpeg");
-
-    // A function to be called if request succeeds
     function onSuccess(uploadedImgUrl) {
         const encodedUploadedImgUrl = encodeURIComponent(uploadedImgUrl)
         console.log(encodedUploadedImgUrl);
-        // document.querySelector('.user-msg').innerText = `Your photo is available here: ${uploadedImgUrl}`
-
         document.querySelector('.share-container').innerHTML = `
             <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u=${encodedUploadedImgUrl}&t=${encodedUploadedImgUrl}" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=${uploadedImgUrl}&t=${uploadedImgUrl}'); return false;">
                Share   
@@ -124,40 +117,44 @@ function largerText(){
 
 function smallerText(){
     gMeme.lines[gMeme.selectedLineIdx].size--;
-    // renderMeme()
     renderCanvas()
 
 }
 
 function alignToLeft(){
-    gMeme.lines[gMeme.selectedLineIdx].location.x=50;
+    gMeme.lines[gMeme.selectedLineIdx].location.x=0;
+    renderCanvas()
+}
+
+function alignToRight(){
+    gMeme.lines[gMeme.selectedLineIdx].location.x=250;
+    renderCanvas()
+}
+
+
+function alignToCenter(){
+    gMeme.lines[gMeme.selectedLineIdx].location.x=120;
+    renderCanvas()
 }
 
 function switchLines(){
-    gMeme.lines[gMeme.selectedLineIdx].location.y=gMeme.lines[gMeme.selectedLineIdx+1].location.y
+    gMeme.lines[gMeme.selectedLineIdx].location.y=480;
+    gMeme.lines[gMeme.selectedLineIdx+2].location.y=20;
     renderCanvas()
 }
 
 function clearCanvas() {
-    // if (confirm("are you sure you want to delete?")) {
-    //     gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height)
-    // }
-    gMeme.selectedLineIdx--;
-    renderCanvas()
+    // gMeme.selectedLineIdx--;
+    gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height)
+    // renderCanvas()
 }
 
 function setStrokeColor(color) {
-    // console.log('color:', color)
-    // gColor = color;
     gMeme.lines[gMeme.selectedLineIdx].strokeColor=color;
     renderCanvas()
-    // document.querySelector('.canvas').style.background = color
 }
 
 function setFillColor(color) {
-    // console.log('color:', color)
-    // gColor = color;
     gMeme.lines[gMeme.selectedLineIdx].fillColor=color;
     renderCanvas()
-    // document.querySelector('.canvas').style.background = color
 }

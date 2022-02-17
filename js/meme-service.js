@@ -31,8 +31,8 @@ var gMeme = {
         txt: 'I want to do meme!!',
         size: 30,
         align: 'left',
-        strokeColor: gColor,
-        fillColor: gColor,
+        strokeColor: 'black',
+        fillColor: 'blue',
         font: 'Ariel',
         location: { x: 100, y: 20 }
     },
@@ -40,8 +40,8 @@ var gMeme = {
         txt: '',
         size: 30,
         align: 'left',
-        strokeColor: gColor,
-        fillColor: gColor,
+        strokeColor: 'black',
+        fillColor: 'blue',
         font: 'Ariel',
         location: { x: 100, y:480 }
     },
@@ -49,10 +49,28 @@ var gMeme = {
         txt: '',
         size: 30,
         align: 'left',
-        strokeColor: gColor,
-        fillColor: gColor,
+        strokeColor: 'black',
+        fillColor: 'blue',
         font: 'Ariel',
         location: { x: 100, y: 250 }
+    },
+    {
+        txt: '',
+        size: 30,
+        align: 'left',
+        strokeColor: 'black',
+        fillColor: 'blue',
+        font: 'Ariel',
+        location: { x: 100, y: 270 }
+    },
+    {
+        txt: '',
+        size: 30,
+        align: 'left',
+        strokeColor: 'black',
+        fillColor: 'blue',
+        font: 'Ariel',
+        location: { x: 100, y: 290 }
     }]
 }
 
@@ -66,7 +84,6 @@ function getImgs() {
     return imgs;
 }
 
-// function  setLineTxt(txt) {
-//     document.querySelector('.canvas-container').innerText = txt
-// }
+// function  setLineTxt(txt) 
+
 
