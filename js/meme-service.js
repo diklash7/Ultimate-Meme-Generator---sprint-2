@@ -43,19 +43,20 @@ var gImgs =
     }
 ];
 
-var gMeme =
-{
-    selectedImgId: 5,
-    selectedLineIdx: 0,
-    lines: [{
-        txt: 'I sometimes eat Falafel',
-        size: 20,
-        align: 'left',
-        color: 'red'
-    }
-    ]
-}
 
+var gMeme = {
+    selectedImgId: 5,
+    selectedLineIdx:0,
+    lines: [{
+        txt: 'I want to do meme!!',
+        size: 30,
+        align: 'left',
+        strokeColor: 'blue',
+        fillColor: 'black',
+        font: 'Ariel',
+        location: { x: 100, y: 100 }
+    }]
+}
 
 function getMeme(){
     var meme=gMeme;
@@ -67,7 +68,6 @@ function getImgs(){
     return imgs;
 }
 
-function  setLineTxt(txt) {
-    document.querySelector('.canvas-container').innerText = txt
-}
-// setLineTxt()
+// function  setLineTxt(txt) {
+//     document.querySelector('.canvas-container').innerText = txt
+// }

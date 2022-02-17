@@ -11,40 +11,46 @@
 </head>
 
 <body onload="init()">
-    <h1>Image-Gallery</h1>
-    <div></div>
+    <div class="Image-Gallery">
+        <h1>Image-Gallery</h1>
 
-    <div class="gallery"></div>
+        <div class="gallery"></div>
+
+    </div>
+
+<div class="Meme-Editor">
 
 
     <div>
         <h1> Meme-Editor </h1>
         <div class="canvas-container">
-            <canvas id="my-canvas" width="500" height="500" style="outline:2px solid blue"></canvas>
-            <!-- <img src="img/1.jpg" alt="" style="display:none;"> -->
+            <canvas id="my-canvas" width="500" height="500" onclick="draw(event)"
+                style="outline:2px solid blue"></canvas>
             <div class="img-container"></div>
         </div>
     </div>
-    <div>
-
-    </div>
+    
 
     <section class="control-box">
-        <input type="text" placeholder="text line" oninput="setLineTxt(this.value)">
-
-
-
+        <input class="txt-img" type="text" placeholder="text line" oninput="onAddTxt(this.value)">
+        <div class="select-container">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/trash.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/add.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/up-and-down-opposite-double-arrows-side-by-side.png"
+                alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/increase font - icon.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/decrease font - icon.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/align-to-left.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/center-text-alignment.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/align-to-right.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/text stroke.png" alt="trash">
+            <img class="btn" onclick="clearCanvas()" src="img/ICONS/paint-board-and-brush.png" alt="trash">
+            <button onclick="uploadImg()">Share</button>
+            <button>Download</button>
+            <a class="btn-save" href="#" onclick="downloadCanvas(this)" download="myphoto">Save</a>
+        </div>
     </section>
-    <div class="select-container">
-        <button>increase font</button>
-        <button>dicrese font</button>
-        <button>align to left</button>
-        <button>align to center</button>
-        <button>align to right</button>
-        <button onclick="clearCanvas()">delte canvas</button>
-
-    </div>
-
+</div>
     <script src="js/main.js"></script>
     <script src="js/utill.js"></script>
     <script src="js/meme-service.js"></script>
