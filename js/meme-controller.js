@@ -1,5 +1,6 @@
 var gCanvas;
 var gCtx;
+// var gColor;
 
 //git status
 //git add .
@@ -38,11 +39,7 @@ function drawText(line) {
 // }
 
 
-function clearCanvas() {
-    if (confirm("are you sure you want to delete?")) {
-        gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height)
-    }
-}
+
 
 function downloadCanvas(elLink) {
     const data = gCanvas.toDataURL();
@@ -115,4 +112,52 @@ function onAddTxt(txt) {
 
 function addTextLine(){
     gMeme.selectedLineIdx++;
+    renderCanvas()
+
+}
+
+function largerText(){
+    gMeme.lines[gMeme.selectedLineIdx].size++;
+    renderCanvas()
+
+}
+
+function smallerText(){
+    gMeme.lines[gMeme.selectedLineIdx].size--;
+    // renderMeme()
+    renderCanvas()
+
+}
+
+function alignToLeft(){
+    gMeme.lines[gMeme.selectedLineIdx].location.x=50;
+}
+
+function switchLines(){
+    gMeme.lines[gMeme.selectedLineIdx].location.y=gMeme.lines[gMeme.selectedLineIdx+1].location.y
+    renderCanvas()
+}
+
+function clearCanvas() {
+    // if (confirm("are you sure you want to delete?")) {
+    //     gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height)
+    // }
+    gMeme.selectedLineIdx--;
+    renderCanvas()
+}
+
+function setStrokeColor(color) {
+    // console.log('color:', color)
+    // gColor = color;
+    gMeme.lines[gMeme.selectedLineIdx].strokeColor=color;
+    renderCanvas()
+    // document.querySelector('.canvas').style.background = color
+}
+
+function setFillColor(color) {
+    // console.log('color:', color)
+    // gColor = color;
+    gMeme.lines[gMeme.selectedLineIdx].fillColor=color;
+    renderCanvas()
+    // document.querySelector('.canvas').style.background = color
 }

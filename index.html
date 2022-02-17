@@ -20,7 +20,7 @@
         </ul>
        </nav> 
        <div>
-           <input type="text"> 
+           <input type="text" placeholder="Enter searh keyword"> 
        </div>
 
         <div class="gallery"></div>
@@ -45,15 +45,17 @@
         <div class="select-container">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/trash.png" alt="trash">
             <img class="btn" onclick="addTextLine()" src="img/ICONS/add.png" alt="add">
-            <img class="btn" onclick="clearCanvas()" src="img/ICONS/up-and-down-opposite-double-arrows-side-by-side.png"
+            <img class="btn" onclick="switchLines()" src="img/ICONS/up-and-down-opposite-double-arrows-side-by-side.png"
                 alt="trash">
-            <img class="btn" onclick="clearCanvas()" src="img/ICONS/increase font - icon.png" alt="trash">
-            <img class="btn" onclick="clearCanvas()" src="img/ICONS/decrease font - icon.png" alt="trash">
+            <img class="btn" onclick="largerText()" src="img/ICONS/increase font - icon.png" alt="trash">
+            <img class="btn" onclick="smallerText()" src="img/ICONS/decrease font - icon.png" alt="trash">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/align-to-left.png" alt="trash">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/center-text-alignment.png" alt="trash">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/align-to-right.png" alt="trash">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/text stroke.png" alt="trash">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/paint-board-and-brush.png" alt="trash">
+            <input type="color" id="color" name="color-line"  value="#ff0000" oninput="setStrokeColor(this.value)" />
+            <input type="color" id="color" name="color-line"  value="#ff0000" oninput="setFillColor(this.value)" />
             <button onclick="uploadImg()">Share</button>
             <button>Download</button>
             <a class="btn-save" href="#" onclick="downloadCanvas(this)" download="myphoto">Save</a>

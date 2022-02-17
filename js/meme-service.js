@@ -1,4 +1,5 @@
 'use strict'
+var gColor;
 
 var gImgs =
     [
@@ -30,8 +31,8 @@ var gMeme = {
         txt: 'I want to do meme!!',
         size: 30,
         align: 'left',
-        strokeColor: 'blue',
-        fillColor: 'black',
+        strokeColor: gColor,
+        fillColor: gColor,
         font: 'Ariel',
         location: { x: 100, y: 20 }
     },
@@ -39,8 +40,8 @@ var gMeme = {
         txt: '',
         size: 30,
         align: 'left',
-        strokeColor: 'blue',
-        fillColor: 'black',
+        strokeColor: gColor,
+        fillColor: gColor,
         font: 'Ariel',
         location: { x: 100, y:480 }
     },
@@ -48,8 +49,8 @@ var gMeme = {
         txt: '',
         size: 30,
         align: 'left',
-        strokeColor: 'blue',
-        fillColor: 'black',
+        strokeColor: gColor,
+        fillColor: gColor,
         font: 'Ariel',
         location: { x: 100, y: 250 }
     }]
@@ -68,3 +69,4 @@ function getImgs() {
 // function  setLineTxt(txt) {
 //     document.querySelector('.canvas-container').innerText = txt
 // }
+
