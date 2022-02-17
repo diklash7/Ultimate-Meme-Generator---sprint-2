@@ -1,7 +1,9 @@
+
+
 img{
-    height: 150px;
-    width: 150px;
-    margin: 20px;
+    height: 139;
+    width: 176.5px;
+    margin: 10.5px;
 }
 
 .btn{
@@ -10,3 +12,12 @@ img{
     margin: 9.5px;
 }
 
+.hide{
+    display:none;
+}
+
+nav{
+    height: 33px;
+    /* width:600px; */
+    background-color: #ff7f00;
+}

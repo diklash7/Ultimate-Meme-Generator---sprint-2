@@ -12,18 +12,27 @@
 
 <body onload="init()">
     <div class="Image-Gallery">
-        <h1>Image-Gallery</h1>
+       <nav>
+        <h1>memegen</h1>
+        <ul>
+            <li>Gallery</li>
+            <li>About</li>
+        </ul>
+       </nav> 
+       <div>
+           <input type="text"> 
+       </div>
 
         <div class="gallery"></div>
 
     </div>
 
-<div class="Meme-Editor">
+<div class="Meme-Editor hide">
 
 
     <div>
         <h1> Meme-Editor </h1>
-        <div class="canvas-container">
+        <div class="canvas-container" >
             <canvas id="my-canvas" width="500" height="500" onclick="draw(event)"
                 style="outline:2px solid blue"></canvas>
             <div class="img-container"></div>
@@ -35,7 +44,7 @@
         <input class="txt-img" type="text" placeholder="text line" oninput="onAddTxt(this.value)">
         <div class="select-container">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/trash.png" alt="trash">
-            <img class="btn" onclick="clearCanvas()" src="img/ICONS/add.png" alt="trash">
+            <img class="btn" onclick="addTextLine()" src="img/ICONS/add.png" alt="add">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/up-and-down-opposite-double-arrows-side-by-side.png"
                 alt="trash">
             <img class="btn" onclick="clearCanvas()" src="img/ICONS/increase font - icon.png" alt="trash">

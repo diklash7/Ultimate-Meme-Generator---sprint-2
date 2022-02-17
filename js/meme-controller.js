@@ -113,3 +113,6 @@ function onAddTxt(txt) {
     renderCanvas()
 }
 
+function addTextLine(){
+    gMeme.selectedLineIdx++;
+}
