@@ -1,0 +1,41 @@
+.control-box {
+    display: inline
+}
+
+.txt-img {
+    width: 373px;
+    height: 61.9px;
+    /* margin: 0 0 1px; */
+    border-radius: 12px;
+    margin-left:99px;
+    margin-top:26px;;
+}
+
+.first-line-btn{
+   margin-left: 89px;
+   margin-top:4.5px;
+}
+
+.second-line-btn{
+    margin-left: 50px;
+    margin-top:21.5px;
+ }
+
+ .third-line-btn{
+    margin-left: 100px;
+    margin-top:21.5px;
+ }
+
+
+ .btn{
+    cursor: pointer;
+    height:3.75em;
+    width: 3.75em;;
+    /* margin: 1.875em; */
+    padding: 10.7px;
+    border: 1px solid white;
+    background-color :var(--clr4);
+
+    border-radius: 0.75em;
+    display: inline;
+}

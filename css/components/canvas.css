@@ -1,6 +1,6 @@
-.canvas-container{
-    margin-top: 100px;
-    /* margin: 0 0 24.3px; */
-    padding: 5.5px 0 96.2px;
-    object-fit: contain;
-  }
+my-canvas {
+  object-fit: contain; */
+  margin-top: 300px;
+  /* margin: 0 0 48.6px; */
+  /* padding: 11px 0 192 .4px;
+}

@@ -105,11 +105,13 @@ function btnBackToGallery() {
 
 function onAddTxt(txt) {
     gMeme.lines[gMeme.selectedLineIdx].txt = txt;
+    console.log(gMeme.lines[gMeme.selectedLineIdx])
     renderCanvas()
 }
 
 function addTextLine() {
     gMeme.selectedLineIdx++;
+    console.log(gMeme.lines[gMeme.selectedLineIdx])
     renderCanvas()
 
 }
@@ -132,19 +134,24 @@ function alignToLeft() {
 }
 
 function alignToRight() {
-    gMeme.lines[gMeme.selectedLineIdx].location.x = 250;
+    gMeme.lines[gMeme.selectedLineIdx].location.x = gCanvas.width-50;
     renderCanvas()
 }
 
 
 function alignToCenter() {
-    gMeme.lines[gMeme.selectedLineIdx].location.x = 120;
+    gMeme.lines[gMeme.selectedLineIdx].location.x = gCanvas.width/2;
     renderCanvas()
 }
 
 function switchLines() {
-    gMeme.lines[gMeme.selectedLineIdx].location.y = 480;
-    gMeme.lines[gMeme.selectedLineIdx + 2].location.y = 20;
+    if(gMeme.lines[0].location.y = gCanvas.height){
+        gMeme.lines[0].location.y = 20;
+        gMeme.lines[1].location.y =gCanvas.height;
+    }else{
+        gMeme.lines[0].location.y = gCanvas.height;
+        gMeme.lines[1].location.y =20;
+    }
     renderCanvas()
 }
 

@@ -3,32 +3,26 @@
 }
 
 html {
-    color: var(--clr3);
+    color: var(--clr4);
     font-family:Montserrat-Regular ;
 }
 
 
 body {
     margin: 0;
-    background-color: var(--clr3);
+    background-color: var(--clr4);
 }
 
 img{
-    height: 139;
-    width: 176.5px;
-    margin: 10.5px;
+    height:278;
+    width: 353px;
+    margin: 21px;
 }
 
 .hide{
     display:none;
 }
 
-.btn{
-    cursor: pointer;
-    height:1.875em;
-    width: 1.875em;;
-    margin: 0.59em;
-    border-radius: 0.375em;
-    background-color: var(--clr3);
-    display: inline;
-}
+
+
+

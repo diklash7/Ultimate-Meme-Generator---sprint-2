@@ -1,6 +1,40 @@
 .main-header {
+    width: 1200px;
     background-color: var(--clr1);
-    height: 2.0625em;
-    /* padding: 8.5px 25px 1.7px 24.5px; 
-    width:600px; */
+    margin: 0 0 18 0.4px;
+    /* padding: 17px 50px 0 49px; */
+    height: 4.125em;
 }
+
+.logo{
+    margin:0;
+}
+
+.search-line{
+    height: 102px;
+    background-color: var(--clr4);
+}
+
+.search {
+    width: 130.5px;
+    height: 20px;
+    /* margin: 1.1px 0 0; */
+
+}
+
+.searchTerm:focus {
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+

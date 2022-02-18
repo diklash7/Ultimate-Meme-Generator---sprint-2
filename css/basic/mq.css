@@ -1,0 +1,9 @@
+@media (max-width: 1020px) {
+    .main-layout {
+      max-width: 600px;
+      height: 937px;
+    }
+    .card {
+      flex-direction: column;
+    }
+  }
