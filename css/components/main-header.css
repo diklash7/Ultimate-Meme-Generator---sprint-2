@@ -6,27 +6,39 @@
     height: 4.125em;
 }
 
-.logo{
-    margin:0;
+.logo {
+    margin-top: 12px;
+    margin-left: 49px;
 }
 
-.search-line{
+.search-line {
     height: 102px;
     background-color: var(--clr4);
 }
 
 .search {
-    width: 130.5px;
-    height: 20px;
+    width: 261px;
+    height: 27.24px;
+    margin-top: 35.8px;
+    margin-left: 49px;
     /* margin: 1.1px 0 0; */
 
 }
 
-.searchTerm:focus {
-    color: #00B4CC;
+li{
+font-family: Montserrat-Regular;
+font-size: 0.593;
+cursor: pointer;
+margin-left: 30px;
+
 }
 
-.searchButton {
+li:hover{
+    color: black;
+}
+
+
+/* .searchButton {
     width: 40px;
     height: 36px;
     border: 1px solid #00B4CC;
@@ -36,5 +48,4 @@
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
-}
-
+} */

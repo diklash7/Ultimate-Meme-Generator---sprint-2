@@ -134,13 +134,13 @@ function alignToLeft() {
 }
 
 function alignToRight() {
-    gMeme.lines[gMeme.selectedLineIdx].location.x = gCanvas.width-50;
+    gMeme.lines[gMeme.selectedLineIdx].location.x = gCanvas.width-180;
     renderCanvas()
 }
 
 
 function alignToCenter() {
-    gMeme.lines[gMeme.selectedLineIdx].location.x = gCanvas.width/2;
+    gMeme.lines[gMeme.selectedLineIdx].location.x = (gCanvas.width/2)-100;
     renderCanvas()
 }
 

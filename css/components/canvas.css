@@ -1,6 +1,12 @@
+.Meme-Editor{
+  background-color: var(--clr3);
+}
+
+
+
 my-canvas {
-  object-fit: contain; */
-  margin-top: 300px;
+  object-fit: contain;
+  margin-top: 500px;
+}
   /* margin: 0 0 48.6px; */
   /* padding: 11px 0 192 .4px;
-}

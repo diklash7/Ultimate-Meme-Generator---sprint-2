@@ -23,14 +23,14 @@
             </nav>
         </div>
     </header>
-    
+
 
     <div class="Image-Gallery">
-       
+
         <div class="search-line">
             <input class="search" type="text" placeholder="Enter searh keyword">
-            <button type="submit" class="searchButton">
-                <i class="fa fa-search"></i>
+            <!-- <button type="submit" class="searchButton"> -->
+            <i class="fa fa-search"></i>
             </button>
         </div>
         <div class="gallery"></div>
@@ -44,52 +44,57 @@
         <container class="flex-direction">
 
 
-            <div class="main-header">
+            <div>
 
                 <div class="flex flex-direction">
                     <div class="canvas-container">
-                        <btn>back to gallery</btn>
+                        <!-- <btn>back to gallery</btn> -->
                         <canvas id="my-canvas" width="541" height="599.58" style="outline:2px solid black"></canvas>
                         <div class="img-container"></div>
                     </div>
 
 
 
-                    <section class="control-box flex align-center flex-direction">
+                    <section class="control-box">
 
                         <input class="txt-img" type="text" placeholder="text line" oninput="onAddTxt(this.value)">
                         <div class="first-line-btn">
                             <img class="btn" onclick="switchLines()"
-                                src="img/ICONS/up-and-down-opposite-double-arrows-side-by-side.png" alt="trash">
+                                src="img/ICONS/up-and-down-opposite-double-arrows-side-by-side.png" alt="side-by-side">
                             <img class="btn" onclick="addTextLine()" src="img/ICONS/add.png" alt="add">
                             <img class="btn" onclick="clearCanvas()" src="img/ICONS/trash.png" alt="trash">
                         </div>
                         <div class="second-line-btn">
 
                             <img class="btn" onclick="largerText()" src="img/ICONS/increase font - icon.png"
-                                alt="trash">
+                                alt="increase">
                             <img class="btn" onclick="smallerText()" src="img/ICONS/decrease font - icon.png"
-                                alt="trash">
-                            <img class="btn" onclick="alignToLeft()" src="img/ICONS/align-to-left.png" alt="trash">
+                                alt="decrease">
+                            <img class="btn" onclick="alignToLeft()" src="img/ICONS/align-to-left.png" alt="to-left">
                             <img class="btn" onclick="alignToCenter()" src="img/ICONS/center-text-alignment.png"
-                                alt="trash">
-                            <img class="btn" onclick="alignToRight()" src="img/ICONS/align-to-right.png" alt="trash">
+                                alt="center">
+                            <img class="btn" onclick="alignToRight()" src="img/ICONS/align-to-right.png" alt="to-right">
 
                         </div>
                         <div calss="third-line-btn">
                             <img class="btn" onclick="setStrokeColor(this.value)" src="img/ICONS/text stroke.png"
-                                alt="trash">
+                                alt="stroke">
                             <img class="btn" onclick="setFillColor(this.value)"
-                                src="img/ICONS/paint-board-and-brush.png" alt="trash">
-                            <input type="color" id="color" name="color-line" value="#ff0000"
+                                src="img/ICONS/paint-board-and-brush.png" alt="paint">
+
+                        </div>
+
+                        <div>
+                            <input class="btn" type="color" id="color" name="color-line" value="#ff0000"
                                 oninput="setStrokeColor(this.value)" />
-                            <input type="color" id="color" name="color-line" value="#ff0000"
+                            <input class="btn" type="color" id="color" name="color-line" value="#ff0000"
                                 oninput="setFillColor(this.value)">
                         </div>
-                        <div>
 
-                            <button onclick="uploadImg()">Share</button>
-                            <button>Download</button>
+                        <div calss="forth-line-btn">
+
+                            <button class="btn2 share" onclick="uploadImg()">Share</button>
+                            <button class="btn2 share">Download</button>
                             <a class="btn-save" href="#" onclick="downloadCanvas(this)" download="myphoto">Save</a>
 
                         </div>

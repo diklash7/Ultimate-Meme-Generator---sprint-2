@@ -3,3 +3,10 @@
     height: 932px;
     background-color: var(--clr3);
 }
+
+img{
+    height:278px;
+    width: 353px;
+    margin: 21px;
+    margin-top:5px;
+}

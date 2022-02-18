@@ -3,39 +3,70 @@
 }
 
 .txt-img {
+    font-family: Montserrat-Regular;
+    font-size: 1.25;
     width: 373px;
     height: 61.9px;
     /* margin: 0 0 1px; */
     border-radius: 12px;
-    margin-left:99px;
-    margin-top:26px;;
+    margin-left: 99px;
+    margin-top: 26px;
+    ;
 }
 
-.first-line-btn{
-   margin-left: 89px;
-   margin-top:4.5px;
+::-webkit-input-placeholder {
+    font-family: Montserrat-Regular;
+   font-size:1em;
+  }
+
+  /* input[type="text"]
+{
+    font-size: 1em;
+} */
+
+.first-line-btn {
+    margin-left: 178px;
+    margin-top: 4.5px;
 }
 
-.second-line-btn{
-    margin-left: 50px;
-    margin-top:21.5px;
- }
+.second-line-btn {
+    margin-left: 99px;
+    margin-top: 21.5px;
+}
 
- .third-line-btn{
-    margin-left: 100px;
-    margin-top:21.5px;
- }
+.third-line-btn {
+ 
+    margin-left: 99px;
+    margin-top: 21.5px;
+}
+
+.forth-line-btn {
+    margin-left: 80px;
+    margin-top: 21.5px;
+}
 
 
- .btn{
+.btn {
     cursor: pointer;
-    height:3.75em;
-    width: 3.75em;;
-    /* margin: 1.875em; */
-    padding: 10.7px;
+    height: 60px;
+    width: 60px;
+    margin: 8px;
+    padding:8.7px;
+    background-color: var(--clr4);
     border: 1px solid white;
-    background-color :var(--clr4);
-
     border-radius: 0.75em;
-    display: inline;
+    /* display: inline; */
+}
+
+.share{
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    background-color: var(--clr1);
+    border-radius: 0.75em;
+    font-size: 20px;
+    font-family: Montserrat-Medium;
+    color: var(--clr4);
+    margin-left: 100px;
+    padding:0
 }

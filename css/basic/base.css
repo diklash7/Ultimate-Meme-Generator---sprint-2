@@ -3,21 +3,17 @@
 }
 
 html {
-    color: var(--clr4);
+    color: var(--clr3);
     font-family:Montserrat-Regular ;
 }
 
 
 body {
     margin: 0;
-    background-color: var(--clr4);
+    background-color: var(--clr3);
 }
 
-img{
-    height:278;
-    width: 353px;
-    margin: 21px;
-}
+
 
 .hide{
     display:none;
