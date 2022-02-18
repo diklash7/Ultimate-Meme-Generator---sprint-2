@@ -1,5 +1,6 @@
 .control-box {
-    display: inline
+    /* display: inline */
+    margin-right: 300px;;
 }
 
 .txt-img {
@@ -69,4 +70,10 @@
     color: var(--clr4);
     margin-left: 100px;
     padding:0
+}
+
+.btn-save{
+    border: 1px solid black;
+    padding:18px;
+    /* width: 30px; */
 }

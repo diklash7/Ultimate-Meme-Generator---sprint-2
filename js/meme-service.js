@@ -11,10 +11,10 @@ var gImgs =
         { id: 6, url: 'img/6.jpg', keywords: ['funny', 'cat'] },
         { id: 7, url: 'img/7.jpg', keywords: ['funny', 'cat'] },
         { id: 8, url: 'img/8.jpg', keywords: ['funny', 'cat'] },
-        { id: 9, url: 'img/9.jpg', keywords: ['funny', 'cat'] }
-        // { id: 10, url: 'img/10.jpg', keywords: ['funny', 'cat'] },
-        // { id: 11, url: 'img/11.jpg', keywords: ['funny', 'cat'] },
-        // { id: 12, url: 'img/12.jpg', keywords: ['funny', 'cat'] },
+        { id: 9, url: 'img/9.jpg', keywords: ['funny', 'cat'] },
+        { id: 10, url: 'img/10.jpg', keywords: ['funny', 'cat'] },
+        { id: 11, url: 'img/11.jpg', keywords: ['funny', 'cat'] },
+        { id: 12, url: 'img/12.jpg', keywords: ['funny', 'cat'] }
         // { id: 13, url: 'img/13.jpg', keywords: ['funny', 'cat'] },
         // { id: 14, url: 'img/14.jpg', keywords: ['funny', 'cat'] },
         // { id: 15, url: 'img/15.jpg', keywords: ['funny', 'cat'] },
@@ -32,7 +32,7 @@ var gMeme = {
         size: 30,
         align: 'left',
         strokeColor: 'black',
-        fillColor: 'blue',
+        fillColor: 'white',
         font: 'Ariel',
         location: { x: 100, y: 20 }
     },
@@ -41,7 +41,7 @@ var gMeme = {
         size: 30,
         align: 'left',
         strokeColor: 'black',
-        fillColor: 'blue',
+        fillColor: 'white',
         font: 'Ariel',
         location: { x: 100, y:480 }
     },
@@ -50,7 +50,7 @@ var gMeme = {
         size: 30,
         align: 'left',
         strokeColor: 'black',
-        fillColor: 'blue',
+        fillColor: 'white',
         font: 'Ariel',
         location: { x: 100, y: 250 }
     },
@@ -59,7 +59,7 @@ var gMeme = {
         size: 30,
         align: 'left',
         strokeColor: 'black',
-        fillColor: 'blue',
+        fillColor: 'white',
         font: 'Ariel',
         location: { x: 100, y: 270 }
     },
@@ -68,7 +68,7 @@ var gMeme = {
         size: 30,
         align: 'left',
         strokeColor: 'black',
-        fillColor: 'blue',
+        fillColor: 'white',
         font: 'Ariel',
         location: { x: 100, y: 290 }
     }]

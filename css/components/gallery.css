@@ -1,10 +1,11 @@
 .gallery{
-    width:1200px;
+    /* width:1200px; */
     height: 932px;
     background-color: var(--clr3);
 }
 
 img{
+    cursor: pointer;
     height:278px;
     width: 353px;
     margin: 21px;

@@ -12,6 +12,7 @@ function init() {
     renderGallery();
     gCanvas = document.getElementById('my-canvas');
     gCtx = gCanvas.getContext('2d');
+    // resizeCanvas()
 }
 
 
@@ -140,7 +141,8 @@ function alignToRight() {
 
 
 function alignToCenter() {
-    gMeme.lines[gMeme.selectedLineIdx].location.x = (gCanvas.width/2)-100;
+    gMeme.lines[gMeme.selectedLineIdx].location.x = (
+        gCanvas.width/2)-100;
     renderCanvas()
 }
 
@@ -170,3 +172,9 @@ function setFillColor(color) {
     gMeme.lines[gMeme.selectedLineIdx].fillColor = color;
     renderCanvas()
 }
+
+function resizeCanvas() {
+    var elContainer = document.querySelector('.canvas-container')
+    gCanvas.width = elContainer.offsetWidth - 20
+ 
+  }
