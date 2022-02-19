@@ -1,6 +1,9 @@
 var gCanvas;
 var gCtx;
 var gImg;
+var  gCurrFont;
+var gStartPos
+const gTouchEvs = ['touchstart', 'touchmove', 'touchend']
 
 //git status
 //git add .
@@ -161,6 +164,11 @@ function switchLines() {
 
 function clearCanvas() {
    //change to foreach
+
+//    gMeme.lines.forEach(line => {
+//     line[i].txt='';
+// })
+
      gMeme.lines[0].txt='';
      gMeme.lines[1].txt='';
      gMeme.lines[2].txt='';
@@ -196,7 +204,7 @@ function resizeCanvas() {
  }
 
  function onImgInput(ev) {
-    loadImageFromInput(ev,renderCanvas)
+    loadImageFromInput(ev,renderCanvas2)
 }
 
 function loadImageFromInput(ev, onImageReady) {
@@ -215,3 +223,15 @@ function loadImageFromInput(ev, onImageReady) {
     reader.readAsDataURL(ev.target.files[0])
     // renderCanvas
 }
+
+function renderCanvas2(img){
+    gCtx.drawImage(img, 0, 0, gCanvas.width, gCanvas.height);  
+}
+
+function setFont(font) {
+    console.log('font:', font)
+    gCurrFont = font;
+    gMeme.lines[gMeme.selectedLineIdx].font = font;
+    renderCanvas()
+}
+

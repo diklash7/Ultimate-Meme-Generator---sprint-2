@@ -1,26 +1,26 @@
 .control-box {
-    /* display: inline */
-    margin-right: 300px;;
+    margin-right: 300px;
+    
 }
 
 .txt-img {
+    cursor: pointer;
     font-family: Montserrat-Regular;
-    font-size: 1.25;
+    font-size: 1.25em;
     width: 373px;
     height: 61.9px;
     /* margin: 0 0 1px; */
     border-radius: 12px;
     margin-left: 99px;
     margin-top: 26px;
-    ;
 }
 
 ::-webkit-input-placeholder {
     font-family: Montserrat-Regular;
-   font-size:1em;
-  }
+    font-size: 1.25em;
+}
 
-  /* input[type="text"]
+/* input[type="text"]
 {
     font-size: 1em;
 } */
@@ -35,45 +35,70 @@
     margin-top: 21.5px;
 }
 
-.third-line-btn {
+/* .third-line-btn {
  
     margin-left: 99px;
     margin-top: 21.5px;
-}
+} */
 
 .forth-line-btn {
-    margin-left: 80px;
-    margin-top: 21.5px;
+    margin-left: 300px;
+    margin-top: 30px;
 }
 
 
 .btn {
     cursor: pointer;
-    height: 60px;
-    width: 60px;
-    margin: 8px;
-    padding:8.7px;
+    height: 3.75em;
+    width: 3.75em;
+    margin: 0.5em;
+    padding: 0.543em;
     background-color: var(--clr4);
     border: 1px solid white;
     border-radius: 0.75em;
     /* display: inline; */
 }
 
-.share{
+.share {
     cursor: pointer;
     width: 120px;
     height: 60px;
     background-color: var(--clr1);
     border-radius: 0.75em;
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: Montserrat-Medium;
     color: var(--clr4);
     margin-left: 100px;
-    padding:0
+    padding: 0
 }
 
-.btn-save{
+.btn-save {
     border: 1px solid black;
-    padding:18px;
+    padding: 18px;
     /* width: 30px; */
+}
+
+select {
+    cursor: pointer;
+    width: 218px;
+    height: 60px;
+    border-radius: 0.75em;
+    margin-left: 99px;
+    margin-top: 0px;
+    /* padding-top: 0px; */
+    font-size: 1.25em;
+    font-family: Montserrat-Regular;
+}
+
+.color {
+   
+    height: 4.6em;
+    width: 4.6em;
+    padding: 0.543em;
+
+}
+
+.first{
+    margin-left: 330px;
+    margin-bottom: 30px;
 }

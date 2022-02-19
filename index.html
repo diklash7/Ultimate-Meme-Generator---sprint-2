@@ -77,21 +77,35 @@
 <!-- <div class="empty flex space-between"></div> -->
                         </div>
                         <div calss="third-line-btn">
+
+                           
+                            <select name="font" class="font" onchange="setFont(this.value)">
+                                <option value="Impact">Impact</option>
+                                <option value="sans-serif">sans-serif</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Cochin">Cochin</option>
+                                <option value="Tahoma">Tahoma</option>
+                                <option value="Geneva">Geneva</option>
+                                <option value="Cambria">Cambria</option>
+
+                                <!-- <option value="text">TEXT</option> -->
+                            </select>
                             <img class="btn" onclick="setStrokeColor(this.value)" src="img/ICONS/text stroke.png"
-                                alt="stroke">
-                            <img class="btn" onclick="setFillColor(this.value)"
-                                src="img/ICONS/paint-board-and-brush.png" alt="paint">
+                            alt="stroke">
+                        <img class="btn" onclick="setFillColor(this.value)"
+                            src="img/ICONS/paint-board-and-brush.png" alt="paint">
 
                         </div>
 
                         <div>
-                            <input class="btn" type="color" id="color" name="color-line" value="#ff0000"
+                            <input class="btn color first" type="color" id="color" name="color-line" value="#ff0000"
                                 oninput="setStrokeColor(this.value)" />
-                            <input class="btn" type="color" id="color" name="color-line" value="#ff0000"
+                            <input class="btn color" type="color" id="color" name="color-line" value="#ff0000"
                                 oninput="setFillColor(this.value)">
                         </div>
 
-                        <div calss="forth-line-btn">
+                        <div calss="forth-line-btn" >
 
                             <button class="btn2 share" onclick="uploadImg()">Share</button>
                             <!-- <button class="btn2 share">Download</button> -->
@@ -100,8 +114,8 @@
                         </div>
                         <div class="share-container"></div>
                         <!-- <div class="inputs">
-                            <input type="file" class="file-input btn" name="image" onchange="onImgInput(event)" />
-                </div> -->
+                            <input type="file" class="file-input btn" name="image" onchange="onImgInput(event)" /> -->
+                </div>
             </div>
             </section>
     </div>

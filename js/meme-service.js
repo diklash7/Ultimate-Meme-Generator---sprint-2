@@ -34,7 +34,7 @@ var gMeme = {
         strokeColor: 'black',
         fillColor: 'white',
         font: 'Ariel',
-        location: { x: 100, y: 20 }
+        location: { x: 100, y: 40 }
     },
     {
         txt: '',
