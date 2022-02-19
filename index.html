@@ -11,14 +11,15 @@
 </head>
 
 <body onload="init()">
+
     <header class="main-header">
         <div class="header-container flex space-between align-center">
             <h1 class="logo">memegen</h1>
             <nav>
                 <ul class="main-nav clean-list flex">
-                    <li onclick="btnBackToGallery()">Gallery</li>
+                    <li data-trans="galllery" onclick="btnBackToGallery()">Gallery</li>
                     <li>|</li>
-                    <li>About</li>
+                    <li data-trans="about" >About</li>
                 </ul>
             </nav>
         </div>
@@ -26,12 +27,17 @@
 
 
     <div class="Image-Gallery">
-
+       
         <div class="search-line">
             <input class="search" type="text" placeholder="Enter searh keyword" oninput="filterText()">
             <!-- <button type="submit" class="searchButton"> -->
             <i class="fa fa-search"></i>
             </button>
+            <select class="lng" onchange="onSetLang(this.value)">
+                <option value="en">English</option>
+                <option value="he">עברית</option>
+            </select>
+    
         </div>
         <div class="gallery"></div>
 
@@ -107,9 +113,9 @@
 
                         <div calss="forth-line-btn" >
 
-                            <button class="btn2 share" onclick="uploadImg()">Share</button>
+                            <button class="btn2 share" data-trans="share" onclick="uploadImg()">Share</button>
                             <!-- <button class="btn2 share">Download</button> -->
-                            <a class="btn-save share" href="#" onclick="downloadCanvas(this)" download="myphoto">Save</a>
+                            <a class="btn-save share" data-trans="save" href="#" onclick="downloadCanvas(this)" download="myphoto">Save</a>
 
                         </div>
                         <div class="share-container"></div>
@@ -127,8 +133,8 @@
         <p>all rights reserved 2019</p>
     </footer>
 
-    <script src="js/main.js"></script>
     <script src="js/utill.js"></script>
+    <script src="js/i18n-service.js"></script>
     <script src="js/meme-service.js"></script>
     <script src="js/meme-controller.js"></script>
     <script src="js/gallery-controller.js"></script>
