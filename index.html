@@ -14,8 +14,14 @@
 
     <header class="main-header">
         <div class="header-container flex space-between align-center">
+       
             <h1 class="logo">memegen</h1>
+            <select class="lng" onchange="onSetLang(this.value)">
+                <option value="en">English</option>
+                <option value="he">עברית</option>
+            </select>
             <nav>
+                
                 <ul class="main-nav clean-list flex">
                     <li data-trans="galllery" onclick="btnBackToGallery()">Gallery</li>
                     <li>|</li>
@@ -33,10 +39,7 @@
             <!-- <button type="submit" class="searchButton"> -->
             <i class="fa fa-search"></i>
             </button>
-            <select class="lng" onchange="onSetLang(this.value)">
-                <option value="en">English</option>
-                <option value="he">עברית</option>
-            </select>
+          
     
         </div>
         <div class="gallery"></div>
