@@ -28,7 +28,7 @@
     <div class="Image-Gallery">
 
         <div class="search-line">
-            <input class="search" type="text" placeholder="Enter searh keyword">
+            <input class="search" type="text" placeholder="Enter searh keyword" oninput="filterText()">
             <!-- <button type="submit" class="searchButton"> -->
             <i class="fa fa-search"></i>
             </button>
@@ -74,7 +74,7 @@
                             <img class="btn" onclick="alignToCenter()" src="img/ICONS/center-text-alignment.png"
                                 alt="center">
                             <img class="btn" onclick="alignToRight()" src="img/ICONS/align-to-right.png" alt="to-right">
-
+<!-- <div class="empty flex space-between"></div> -->
                         </div>
                         <div calss="third-line-btn">
                             <img class="btn" onclick="setStrokeColor(this.value)" src="img/ICONS/text stroke.png"
@@ -99,8 +99,9 @@
 
                         </div>
                         <div class="share-container"></div>
-
-                </div>
+                        <!-- <div class="inputs">
+                            <input type="file" class="file-input btn" name="image" onchange="onImgInput(event)" />
+                </div> -->
             </div>
             </section>
     </div>

@@ -1,5 +1,6 @@
 var gCanvas;
 var gCtx;
+var gImg;
 
 //git status
 //git add .
@@ -107,7 +108,8 @@ function btnBackToGallery() {
 function onAddTxt(txt) {
     gMeme.lines[gMeme.selectedLineIdx].txt = txt;
     console.log(gMeme.lines[gMeme.selectedLineIdx])
-    renderCanvas()
+    console.log(gMeme.selectedLineIdx);
+        renderCanvas()
 }
 
 function addTextLine() {
@@ -147,19 +149,25 @@ function alignToCenter() {
 }
 
 function switchLines() {
-    if(gMeme.lines[0].location.y = gCanvas.height){
+    if(gMeme.lines[0].location.y ===  560){
         gMeme.lines[0].location.y = 20;
-        gMeme.lines[1].location.y =gCanvas.height;
+        gMeme.lines[1].location.y =560;
     }else{
-        gMeme.lines[0].location.y = gCanvas.height;
+        gMeme.lines[0].location.y = 560;
         gMeme.lines[1].location.y =20;
     }
     renderCanvas()
 }
 
 function clearCanvas() {
-    gMeme.selectedLineIdx--;
-    // gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height)
+   //change to foreach
+     gMeme.lines[0].txt='';
+     gMeme.lines[1].txt='';
+     gMeme.lines[2].txt='';
+     gMeme.lines[3].txt='';
+     gMeme.lines[4].txt='';
+     gMeme.lines[5].txt='';
+     gMeme.lines[6].txt='';
     renderCanvas();
 }
 
@@ -178,3 +186,32 @@ function resizeCanvas() {
     gCanvas.width = elContainer.offsetWidth - 20
  
   }
+
+  var keywords=['funny','cat','dog']
+ function filterText(words){
+     return words.filter(function(keyword){
+         return gImgs.keyword.includes('dog')
+     })
+
+ }
+
+ function onImgInput(ev) {
+    loadImageFromInput(ev,renderCanvas)
+}
+
+function loadImageFromInput(ev, onImageReady) {
+    document.querySelector('.share-container').innerHTML = ''
+    var reader = new FileReader()
+
+    reader.onload = function (event) {
+        console.log('onload');
+        var img = new Image()
+        // Render on canvas
+        img.onload = onImageReady.bind(null, img)
+        img.src = event.target.result
+        gImg = img
+    }
+    console.log('after');
+    reader.readAsDataURL(ev.target.files[0])
+    // renderCanvas
+}

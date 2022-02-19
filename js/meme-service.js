@@ -3,7 +3,7 @@ var gColor;
 
 var gImgs =
     [
-        { id: 1, url: 'img/1.jpg', keywords: ['funny', 'cat'] },
+        { id: 1, url: 'img/1.jpg', keywords: ['funny', 'cat','dog'] },
         { id: 2, url: 'img/2.jpg', keywords: ['funny', 'cat'] },
         { id: 3, url: 'img/3.jpg', keywords: ['funny', 'cat'] },
         { id: 4, url: 'img/4.jpg', keywords: ['funny', 'cat'] },
@@ -28,8 +28,8 @@ var gMeme = {
     selectedImgId: 5,
     selectedLineIdx: 0,
     lines: [{
-        txt: 'I want to do meme!!',
-        size: 30,
+        txt: 'I love to do meme!!',
+        size: 35,
         align: 'left',
         strokeColor: 'black',
         fillColor: 'white',
@@ -38,16 +38,16 @@ var gMeme = {
     },
     {
         txt: '',
-        size: 30,
+        size: 35,
         align: 'left',
         strokeColor: 'black',
         fillColor: 'white',
         font: 'Ariel',
-        location: { x: 100, y:480 }
+        location: { x: 100, y:580 }
     },
     {
         txt: '',
-        size: 30,
+        size: 35,
         align: 'left',
         strokeColor: 'black',
         fillColor: 'white',
@@ -56,7 +56,7 @@ var gMeme = {
     },
     {
         txt: '',
-        size: 30,
+        size: 35,
         align: 'left',
         strokeColor: 'black',
         fillColor: 'white',
@@ -65,7 +65,7 @@ var gMeme = {
     },
     {
         txt: '',
-        size: 30,
+        size: 35,
         align: 'left',
         strokeColor: 'black',
         fillColor: 'white',
