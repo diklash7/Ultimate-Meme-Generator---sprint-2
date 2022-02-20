@@ -3,14 +3,14 @@
 }
 
 html {
-    color: var(--clr3);
+    color: var(--clr4);
     font-family:Montserrat-Regular ;
 }
 
 
 body {
     margin: 0;
-    background-color: var(--clr3);
+    background-color: var(--clr4);
 }
 
 

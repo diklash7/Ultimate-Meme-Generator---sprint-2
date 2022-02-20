@@ -51,7 +51,7 @@
     cursor: pointer;
     height: 3.75em;
     width: 3.75em;
-    margin: 0.5em;
+    margin: 0.35em;
     padding: 0.543em;
     background-color: var(--clr4);
     border: 1px solid white;
@@ -68,7 +68,7 @@
     font-size: 1.25em;
     font-family: Montserrat-Medium;
     color: var(--clr4);
-    margin-left: 100px;
+    margin-left: 120px;
     padding: 0
 }
 

@@ -7,3 +7,14 @@
       flex-direction: column;
     }
   }
+
+/* 
+  @media (max-width: 600px) {
+    .main-layout {
+      max-width:1200px;
+      height: 937px;
+    }
+    .meme {
+      flex-direction: row;
+    }
+  } */
