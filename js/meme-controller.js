@@ -13,10 +13,12 @@ const gTouchEvs = ['touchstart', 'touchmove', 'touchend']
 
 
 function init() {
-    renderGallery();
     gCanvas = document.getElementById('my-canvas');
     gCtx = gCanvas.getContext('2d');
-    // resizeCanvas()
+    renderGallery();
+    addMouseListeners();
+        // resizeCanvas()
+
 }
 
 
@@ -27,7 +29,7 @@ function renderMeme(id) {
 
 
 function drawText(line) {
-    gCtx.font = `${line.size}px ${line.font}`;;
+    gCtx.font = `${line.size}px ${line.font}`;
     gCtx.lineWidth = 2;
     gCtx.strokeStyle = line.strokeColor;
     gCtx.fillStyle = line.fillColor;
@@ -41,6 +43,11 @@ function drawText(line) {
 //     drawText('שלום', offsetX, offsetY);
 //     // console.log(offsetX, offsetY)
 // }
+
+function onFilter(txt) {
+    setFilterBy(txt)
+    renderGallery()
+}
 
 
 function downloadCanvas(elLink) {
@@ -232,6 +239,79 @@ function setFont(font) {
     console.log('font:', font)
     gCurrFont = font;
     gMeme.lines[gMeme.selectedLineIdx].font = font;
+    
+    
     renderCanvas()
 }
 
+function addMouseListeners() {
+    gCanvas.addEventListener('mousemove', onMove)
+    gCanvas.addEventListener('mousedown', onDown)
+    gCanvas.addEventListener('mouseup', onUp)
+}
+
+function onDown(ev) {
+    const pos = getEvPos(ev);
+    console.log('onDown()');
+
+    if (!isTxtClicked(pos)) return;
+    setBoxDrag(true);
+    gStartPos = pos;
+    document.body.style.cursor = 'grabbing';
+    renderCanvas();
+}
+
+function onMove(ev) {
+    console.log('onMove()');
+    const txt = getTxtBox();
+    if (txt.isDrag) {
+        const pos = getEvPos(ev)
+        const dx = pos.x - gStartPos.x
+        const dy = pos.y - gStartPos.y
+        moveTxtBox(dx, dy);
+        gStartPos = pos;
+        renderCanvas()
+    }
+}
+
+function onUp() {
+    console.log('onUp()');
+
+    setBoxDrag(false)
+    document.body.style.cursor = 'grab'
+
+}
+
+
+function getEvPos(ev) {
+    var pos = {
+        x: ev.offsetX,
+        y: ev.offsetY
+    }
+    return pos
+}
+
+
+function wordsSearch(word) {
+
+    if (word === 'cat') {
+        var elCat = document.querySelector('.cat')
+        elCat.style.fontSize = '40' + 'px';
+        elCat.style.color = 'blue';
+    }
+    if (word === 'funny') {
+        var elFunny = document.querySelector('.funny')
+        elFunny.style.fontSize = '40' + 'px';
+        elFunny.style.color = 'blue';
+    }
+    if (word === 'priorities') {
+        var elPriorities = document.querySelector('.priorities')
+        elPriorities.style.fontSize = '40' + 'px';
+        elPriorities.style.color = 'blue';
+    }
+    if (word === 'ironic') {
+        var elIronic = document.querySelector('.ironic')
+        elIronic.style.fontSize = '40' + 'px';
+        elIronic.style.color = 'blue';
+    }
+}

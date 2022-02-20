@@ -8,13 +8,28 @@
     }
   }
 
-/* 
+
   @media (max-width: 600px) {
+
     .main-layout {
-      max-width:1200px;
+      max-width:600px;
       height: 937px;
     }
     .meme {
       flex-direction: row;
     }
-  } */
+    .control-box{
+      flex-direction: column;
+      justify-content: center;
+      gap:10px;
+    }
+    
+    img{
+      cursor: pointer;
+      height:100px;
+      width: 100px;
+      margin: 21px;
+      margin-top:5px;
+
+    }
+  }

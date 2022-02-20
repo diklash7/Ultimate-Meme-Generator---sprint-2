@@ -11,3 +11,25 @@ img{
     margin: 21px;
     margin-top:5px;
 }
+
+.words-search {
+    font-size: 20px;
+    display: inline;
+    margin-left: 100px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.dog,
+.cat,
+.political,
+.funny,
+.priorities,
+.person,
+.baby,
+.ironic {
+    color: black;
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+}
